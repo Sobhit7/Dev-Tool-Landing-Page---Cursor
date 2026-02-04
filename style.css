@@ -1,0 +1,437 @@
+
+* {
+    padding: 0;
+    margin: 0;              
+    box-sizing: border-box;  
+}
+
+/* BODY STYLING */
+body {
+    background-color: #000000f5;  
+    font-family: Arial, Helvetica, sans-serif; 
+}
+/* NAVBAR */
+nav {
+    padding: 1%;
+    display: flex;                      
+    justify-content: space-between;     
+    align-items: center;                
+    position: fixed;                    
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;                     
+    height: 9%;
+    background-color: #00000012;    
+}
+
+/* Logo images inside navbar */
+nav img {
+    width: 5vw;                       
+}
+
+/* Logo container */
+nav .logo {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;                          
+}
+
+/* Navbar menu list */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;                  
+}
+
+/* Navbar links */
+nav ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Navbar hover effect */
+nav ul a:hover {
+    color: #CCCCCC;
+}
+
+/* Sign in button */
+nav .sign-btn {
+    background-color: #00000030;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.49) 1px 1px 1px 1px;
+}
+
+/* Navbar buttons */
+nav button {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 0.9rem;
+    width: 5rem;
+}
+
+/* HEADER MAIN SECTION */
+header main {
+    margin: 15% 20% 0% 5%;  /* Top Right Bottom Left */
+    height: 40vh;
+}
+
+/* Main heading */
+main h1 {
+    padding: 10px;
+    margin-top: 20px;
+    padding-right: 15%;
+    color: #ffffffe1;
+    height: 20vh;
+    font-size: 30px;
+}
+
+/* Main download button */
+main button {
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 2rem;
+    border: none;
+    color: #000000;
+    width: 25%;
+    background-color: #FFFFFF;
+}
+
+/* IMAGE SECTION */
+section img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Section paragraph */
+section p {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 9%;
+}
+
+/* Company logos grid */
+section .box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    gap: 10px;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+/* Individual logo box */
+.logo_1 {
+    background-color: #151515;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* HERO TWO COLUMN SECTION */
+.hero-two-col {
+    background-color: #151515;
+    margin-top: 5rem;
+    display: flex;
+    height: 100vh;
+}
+
+/* Hero text area */
+.hero-text {
+    width: 60%;
+    margin: auto;
+    height: 50vh;
+}
+
+/* Hero heading */
+.hero-text h1 {
+    margin-top: 10%;
+    text-align: start;
+    display: flex;
+    font-size: 1.5rem;
+    height: 20%;
+    line-height: 2rem;
+}
+
+/* Hero paragraph */
+.hero-text p {
+    margin: 5%;
+    font-size: 3vh;
+    text-align: start;
+    padding-left: 1%;
+    color: #CCCCCC;
+}
+
+/* Hero link */
+.hero-text .hero-link {
+    padding: 10%;
+    color: orangered;
+    text-decoration: none;
+}
+
+/* Hero image section */
+.hero-image {
+    width: 100%;
+    background-color: rgb(17, 33, 33);
+}
+
+/* Hero image */
+.hero-image img {
+    width: 600px;
+    height: auto;
+}
+
+/* TESTIMONIAL SECTION */
+.section {
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Section title */
+.section-title {
+    margin-top: 5%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #e5e7eb;
+}
+
+/* Cards container */
+.cards {
+    display: grid;
+    margin: 2%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Individual card */
+.card {
+    background: #121315;
+    border-radius: 18px;
+    padding: 2px 24px 22px;
+    border: 1px solid #1f2933;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card text */
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e5e7eb;
+    margin-bottom: 28px;
+}
+
+/* Card footer */
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Avatar image */
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+/* Name */
+.name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+/* Role */
+.role {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* DESCRIPTION SECTION */
+.Description {
+    width: auto;
+    height: auto;
+}
+
+/* Description heading */
+.Description h2 {
+    color: #CCCCCC;
+    text-align: start;
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+/* Description button */
+.Description button {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-left: 1%;
+    border-radius: 2rem;
+    border: none;
+    color: #000000;
+    width: 10%;
+    background-color: #FFFFFF;
+}
+
+/* Description image */
+.Description img {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+footer .hedinge {
+    margin-top: 10%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: larger;
+}
+
+/* Footer button wrapper */
+footer .btn-one {
+    text-align: center;
+}
+
+/* Footer main button */
+footer #btn {
+    margin-top: 2rem;
+    padding: 1.5%;
+    width: 20%;
+    border-radius: 5rem;
+    font-size: medium;
+    border: none;
+    margin-bottom: 5%;
+}
+
+/* Button hover */
+footer #btn:hover {
+    cursor: pointer;
+}
+
+/* Footer container */
+.footer {
+    color: #FFFFFF;
+    background-color: #00000077;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer sections */
+.footer .footer_section {
+    color: #cccccc7a;
+    margin-top: 5%;
+    line-height: 2rem;
+}
+
+/* Footer list */
+.footer ul {
+    list-style: none;
+    margin: 2rem;
+}
+
+/* Footer links */
+.footer a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+/* Footer hover */
+.footer a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsiv  */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav img {
+    width: 12vw;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Header */
+  header main {
+    margin: 35% 5% 0% 5%;
+  }
+
+  main h1 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  main button {
+    width: 80%;
+  }
+
+  /* Logos grid */
+  section .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hero sections */
+  .hero-text h1 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  /* Cards */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Description */
+  .Description h2 {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .Description button {
+    width: 50%;
+  }
+
+  /* Footer */
+  footer #btn {
+    width: 70%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
